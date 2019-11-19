@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Compile Include="Common.fs" />
-    <Compile Include="Challenges\2018\Day01.fs" />
+    <Compile Include="Challenges\2018\*.fs" />
     <Compile Include="Program.fs" />
     <Content Include="input-files\**\*.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
