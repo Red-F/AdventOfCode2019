@@ -27,16 +27,20 @@ let getSolver year day part printResult =
     match day with
     | 1 -> run Year2018Day01.solver | 2 -> run Year2018Day02.solver
     | day -> fun _ -> printfn "Invalid Day: %i (Year %i)" day year
+  | 2019 ->
+    match day with
+    | 1 -> run Year2019Day01.solver
+    | day -> fun _ -> printfn "Invalid Day: %i (Year %i)" day year
   | year -> fun _ -> printfn "Invalid Year: %i" year
 
 type Bench() =
   let mutable solverFunc : unit -> unit = fun _ -> ()
   
-  [<Params (2018)>]
+  [<Params (2018, 2019)>]
   member val public Year = 0 with get, set
 
   // [<Params (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25)>]
-  [<Params (1, 2)>]
+  [<Params (1)>]
   member val public Day = 0 with get, set
 
   [<Params (1, 2)>]
