@@ -29,7 +29,8 @@ let getSolver year day part printResult =
     | day -> fun _ -> printfn "Invalid Day: %i (Year %i)" day year
   | 2019 ->
     match day with
-    | 1 -> run Year2019Day01.solver | 2 -> run Year2019Day02.solver
+    | 1 -> run Year2019Day01.solver | 2 -> run Year2019Day02.solver | 3 -> run Year2019Day03.solver | 4 -> run Year2019Day04.solver | 5 -> run Year2019Day05.solver
+    | 6 -> run Year2019Day06.solver | 7 -> run Year2019Day07.solver | 8 -> run Year2019Day08.solver | 9 -> run Year2019Day09.solver | 10 -> run Year2019Day10.solver
     | day -> fun _ -> printf "."
   | year -> fun _ -> printfn "Invalid Year: %i" year
 
@@ -68,7 +69,7 @@ let main argv =
       | "ALL" -> for year in 2018..2018 do runYear year
       | x ->
           let parts = x.Split('.') |> Array.map int
-          match parts.Length with
+          match parts.Length with 
           | 1 -> runYear parts.[0]
           | 2 -> runDay parts.[0] parts.[1]
           | 3 -> runPart parts.[0] parts.[1] parts.[2]

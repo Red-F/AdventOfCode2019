@@ -9,11 +9,13 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/bin/Debug/netcoreapp3.0/AdventOfCode",
-      "args": [ "2018.2"],
+      "program": "${workspaceFolder}/bin/Debug/netcoreapp3.0/adventofcode.dll",
+      "args": ["2019.3"],
       "cwd": "${workspaceFolder}",
       "stopAtEntry": false,
-      "console": "internalConsole"
+      "console": "externalTerminal"
     }
+
+
   ]
 }
