@@ -10,7 +10,7 @@
       "request": "launch",
       "preLaunchTask": "build",
       "program": "${workspaceFolder}/bin/Debug/netcoreapp3.0/adventofcode.dll",
-      "args": ["2019.5"],
+      "args": ["2019.6"],
       "cwd": "${workspaceFolder}",
       "stopAtEntry": false,
       "console": "externalTerminal"
